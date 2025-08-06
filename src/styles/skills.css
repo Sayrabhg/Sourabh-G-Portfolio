@@ -1,0 +1,24 @@
+/* circular progress bar css */
+
+.circular-progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: rgb(83, 36, 36);
+}
+
+.percentage {
+    position: relative;
+    font-size: 1em;
+    color: black;
+}

@@ -1,0 +1,13 @@
+section#nav {
+    background-color: #cacaca;
+}
+
+#about, #resume {
+    width: 100%;
+    /* max-width: 1500px; */
+    justify-self: center;
+}
+
+#Resume {
+    background-color: #f9f9f9;
+}
