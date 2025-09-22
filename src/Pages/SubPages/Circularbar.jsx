@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import bootstrap from "../assets/logos/bootstrap-wordmark.png";
-import css from "../assets/logos/css3-logo-png_seeklogo-186678.png";
-import html from "../assets/logos/html5-emblem-orange-shield-and-white-text-vector.png";
-import fd from "../assets/logos/java-fullstack.png";
-import java from "../assets/logos/java-logo.png";
-import js from "../assets/logos/JavaScript-Logo.png";
-import sql from "../assets/logos/mysql-logo-development-code-icon.png";
-import php from "../assets/logos/pngimg.com - php_PNG43.png";
-import tailwind from "../assets/logos/tailwind.png";
-import "../styles/skills.css";
+import bootstrap from "./logos/bootstrap-wordmark.png";
+import css from "./logos/css3-logo-png_seeklogo-186678.png";
+import html from "./logos/html5-emblem-orange-shield-and-white-text-vector.png";
+import fd from "./logos/java-fullstack.png";
+import java from "./logos/java-logo.png";
+import js from "./logos/JavaScript-Logo.png";
+import sql from "./logos/mysql-logo-development-code-icon.png";
+import php from "./logos/pngimg.com - php_PNG43.png";
+import tailwind from "./logos/tailwind.png";
+
 
 export default function Circularbar() {
     const img = {

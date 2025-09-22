@@ -1,5 +1,4 @@
-
-import Circularbar from '../js/circularbar'
+import Circularbar from './SubPages/Circularbar'
 import '../styles/skills.css'
 
 export default function Skills(){
