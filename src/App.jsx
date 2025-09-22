@@ -8,6 +8,7 @@ import Home from './Home'
 import Nav from './Components/Nav'
 import About from './Pages/About';
 import Resume from './Pages/Resume';
+import Projects from './Pages/Projects';
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
     <Router>
         <Nav />
         <Routes>
+          <Route path='/' element={<Home />}></Route>
           <Route path='/Home' element={<Home />}></Route>
           <Route path='/About' element={<About />}></Route>
           <Route path='/Resume' element={<Resume />}></Route>
-          <Route path='/' element={<Home />}></Route>
+          <Route path='/Projects' element={<Projects />}></Route>
         </Routes>
       </Router>
       {/* <Home /> */}

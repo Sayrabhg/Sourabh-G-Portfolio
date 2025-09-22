@@ -2,6 +2,8 @@ import Slider from "./Pages/Slider";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Skills from "./Pages/Skills";
+import Footer from "./components/Footer";
+import Projects from "./Pages/Projects";
 
 export default function Home() {
     return <>
@@ -10,6 +12,8 @@ export default function Home() {
             <About />
             <Resume />
             <Skills />
+            <Projects />
+            <Footer />
         </section>
     </>;
 }

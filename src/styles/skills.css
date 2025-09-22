@@ -1,3 +1,15 @@
+.all-cards {
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.all-cards1, .databases {
+    grid-template-columns: auto auto;
+}
+
+.d-grid.d-grid.gap-5{
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
 /* circular progress bar css */
 
 .circular-progress {
@@ -21,4 +33,28 @@
     position: relative;
     font-size: 1em;
     color: black;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.c1 {
+    justify-items: center;
+    align-content: center;
+    gap: 1em;
+    display: grid;
+    width: max-content;
+}
+
+@media screen and (max-width:768px) {
+    .all-cards {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .all-cards {
+        grid-template-columns: auto auto;
+    }
 }

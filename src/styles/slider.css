@@ -1,7 +1,7 @@
 #slider {
     position: relative;
     border: 0 !important;
-    height: 44rem;
+    height: 100vh;
 }
 
 #slider .sliderDiv {
@@ -18,4 +18,18 @@
     position: relative;
     height: 100%;
     align-content: center;
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 30px!important;
+        margin: 0!important;
+    }
+    h3{
+        margin: 0!important;
+        font-size: 1.1em!important;
+    }
+    p{
+        font-size: .9em;
+    }
 }

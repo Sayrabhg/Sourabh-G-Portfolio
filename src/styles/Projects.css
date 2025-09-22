@@ -1,0 +1,118 @@
+
+img {
+    max-width: 100%;
+}
+
+#projects .educationanimation {
+    filter: drop-shadow(0px 0px 5px #0000002e);
+    background-color: white;
+}
+
+#projects.visible {
+    animation: projects .4s linear forwards;
+}
+
+@keyframes projects {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        transform: translateX(-106em);
+    }
+
+    50% {
+        transform: scale(.5);
+    }
+
+    80% {
+
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(-2em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateX(0);
+    }
+}
+
+#projects .alleductionanimation:hover .icons {
+    border: 1px solid rgb(17, 52, 255);
+    padding: 3px 8px;
+    background-color: #0051ff70;
+    color: #ffffff;
+}
+
+@media screen and (min-width:1281px) {
+    #projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    #projects {
+        grid-template-columns: auto;
+    }
+}
+
+#projects .alleductionanimation:hover .visiblelive {
+    opacity: 1;
+    transition: all .7s ease;
+}
+
+@media screen and (min-width:1024px) {
+    #projects .alleductionanimation:hover .animated-text h2 {
+        transform: translateY(-2rem);
+        transition: all .7s ease;
+    }
+
+    #projects .alleductionanimation .animated-text h2 {
+        transform: translateY(0);
+        transition: all 0.7s ease;
+    }
+}
+
+/* title animation text */
+
+.animated-text {
+    position: relative;
+    overflow: hidden;
+}
+.animated-text h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#projects .alleductionanimation .animated-text h2 {
+    transform: translateY(0);
+    transition: all 0.7s ease;
+}
+
+/* icon text */
+
+a {
+    font-size: .75em;
+    text-decoration: none!important;
+}
+
+#projects .alleductionanimation:hover .icons {
+    border: 1px solid rgb(17, 52, 255);
+    padding: 3px 8px;
+    background-color: #0051ff70;
+    color: #ffffff;
+    border-radius: 3em;
+    align-content: center;
+}
+
+.alleductionanimation .icons {
+    transition: all .7s ease-in;
+}

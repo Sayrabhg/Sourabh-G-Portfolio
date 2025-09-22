@@ -12,12 +12,14 @@
     border-radius: 1rem;
 }
 
-.joint-l{
+.joint-l {
     background-color: rgb(247, 238, 255);
 }
-.joint-r{
+
+.joint-r {
     background-color: #f7f7f7;
 }
+
 .joint-r::before {
     content: '';
     width: 1rem;
@@ -46,3 +48,27 @@
     border-right: 1px solid #d3d3d3;
 }
 
+#showresume {
+    grid-template-columns: max-content auto;
+}
+
+@media screen and (max-width:768px) {
+    .boxsiz .row div div {
+        width: fit-content;
+    }
+
+    #Resume .boxsiz {
+        gap: 1em;
+        display: grid;
+    }
+    
+    .joint-l::before ,
+    .joint-r::before {
+        display: none;
+    }
+    
+    #showresume {
+        grid-template-columns: auto;
+        gap: .6em 0;
+    }
+}

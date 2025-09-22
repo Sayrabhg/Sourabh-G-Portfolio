@@ -6,12 +6,11 @@ export default function Resume(){
         <>
         <section id="Resume">
             <div className="container py-5">
-                <div className="row">
                     <div className="row">
                         <div className="col-lg-12 col-12">
                             <h1 class="">Resume</h1>
-                            <aside id="showresume" className='d-flex py-3'>
-                                <p class="" style={{fontWeight:'bold',width:'6rem'}}>Summary : </p>
+                            <aside id="showresume" className='d-grid py-3'>
+                                <p class="" style={{fontWeight:'bold',width:'6rem'}}>Summary :</p>
                                 <p class="" style={{textIndent:'.1rem'}}> I have completed my school and college-level education, and this year, I successfully completed the final year of my Master of Computer Applications (MCA) program.</p>                                
                             </aside>
                         </div>
@@ -19,7 +18,7 @@ export default function Resume(){
                     <div className="row">
                         <div className="col-lg-12 col-12">
                             <aside class="">
-                                <p class="" style={{fontWeight:'bold'}}>Education</p>
+                                <p class="py-3" style={{fontWeight:'bold'}}>Education</p>
                                 <div class="container position-relative boxsiz">
                                     <div className="vertical-line"></div>
                                     <div className="row">
@@ -70,7 +69,6 @@ export default function Resume(){
                             </aside>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         </>
