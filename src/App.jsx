@@ -5,17 +5,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './styles/All.css'
 import Home from './Home'
-import Nav from './Components/Nav'
 import About from './Pages/About';
 import Resume from './Pages/Resume';
 import Projects from './Pages/Projects';
+import ContactForm from './Pages/ContactForm';
+import Nav from './components/Nav';
+import Footer from "./components/Footer";
 
 function App() {
 
   return (
     <>
-    
-    <Router>
+
+      <Router>
         <Nav />
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -23,7 +25,9 @@ function App() {
           <Route path='/About' element={<About />}></Route>
           <Route path='/Resume' element={<Resume />}></Route>
           <Route path='/Projects' element={<Projects />}></Route>
+          <Route path='/contact' element={<ContactForm />}></Route>
         </Routes>
+        <Footer />
       </Router>
       {/* <Home /> */}
     </>

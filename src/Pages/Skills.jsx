@@ -9,7 +9,7 @@ export default function Skills(){
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="div03">
                         <div id="skills" class="div3">
-                            <h1 class="">Skills</h1>
+                            <h1 class="py-3">Skills</h1>
                         </div>
                         <main class="main21 d-grid gap-4">
                             <div id="skills" class="">

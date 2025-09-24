@@ -10,8 +10,12 @@ img {
     animation: projects .4s linear forwards;
 }
 
-.educationanimation:hover,
-.alleductionanimation:hover img  {
+body.dark #projects.visible {
+    border-color: #565656!important;
+}
+
+#projects .educationanimation:hover,
+.alleductionanimation:hover img {
     scale: 1.04;
     background-color: #a5a2ce1e;
 }
@@ -62,27 +66,21 @@ img {
     }
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:768px) {
     #projects {
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .border.border-dark.rounded {
+        height: 10em !important;
     }
 }
 
 #projects .alleductionanimation:hover .visiblelive {
     opacity: 1;
     transition: all .7s ease;
-}
-
-@media screen and (min-width:1024px) {
-    #projects .alleductionanimation:hover .animated-text h2 {
-        transform: translateY(-2rem);
-        transition: all .7s ease;
-    }
-
-    #projects .alleductionanimation .animated-text h2 {
-        transform: translateY(0);
-        transition: all 0.7s ease;
-    }
 }
 
 /* title animation text */
@@ -100,6 +98,11 @@ img {
 #projects .alleductionanimation .animated-text h2 {
     transform: translateY(0);
     transition: all 0.7s ease;
+}
+
+#projects .alleductionanimation:hover .animated-text h2 {
+    transform: translateY(-110%);
+    transition: all .7s ease;
 }
 
 /* icon text */

@@ -2,6 +2,10 @@ section#nav {
     background-color: #0032b5;
 }
 
+body.dark section#nav {
+    background-color: #121212;
+}
+
 #about, #resume {
     width: 100%;
     /* max-width: 1500px; */
@@ -10,4 +14,8 @@ section#nav {
 
 #Resume {
     background-color: #f9f9f9;
+}
+
+body.dark #Resume {
+    background-color: #2e2e2e;
 }

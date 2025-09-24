@@ -1,0 +1,11 @@
+@media screen and (max-width:600px) {
+    .card-body {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:337px) {
+    .position-absolute {
+        margin: 0!important;
+    }
+}

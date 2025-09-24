@@ -6,7 +6,7 @@ export default function About() {
     const [isExpanded, setIsExpanded] = useState(false)
 
     const aboutImage = {
-        imageSize: '70%',
+        imageSize: '23em',
         height: 'fit-content',
         borderRadius: '.5rem',
         textAlign: 'left',
@@ -17,10 +17,10 @@ export default function About() {
 
     return (
         <section id="about">
-            <div className="container py-5 d-grid aboutcontainer" style={{ gap: '1rem' }}>
+            <div className="container py-5 d-grid aboutcontainer" style={{ gap: '2rem' }}>
                 <div className="row">
                     <div className="col-lg-12">
-                        <h1>About</h1>
+                        <h1 className='pb-3'>About</h1>
                         <p id="text" style={{ textIndent: '2em', textAlign: 'justify' }}>
                             Hello everyone, I'm a <b>Java Full Stack Developer</b> with strong skills in Core Java,
                             Advanced Java, and frameworks like Hibernate and Spring. I'm also proficient in API
@@ -51,7 +51,7 @@ export default function About() {
                             <a
                                 id="readMoreBtn"
                                 onClick={() => setIsExpanded(!isExpanded)}
-                                className="bg-white text-danger"
+                                className="text-danger"
                                 style={{ textDecoration: 'none', cursor: 'pointer' }}
                             >
                                 {isExpanded ? '...read less' : ' read more...'}
@@ -79,7 +79,7 @@ export default function About() {
                         <div>
                             <h2>Web / Full Stack Developer</h2>
                             <p>As per my truly knowledge based, I fill my personal details about myself</p>
-                            <ul style={{paddingLeft:'1em'}}>
+                            <ul style={{ paddingLeft: '1em' }}>
                                 <li>
                                     <div className="d-grid grid">
                                         <div style={{ fontWeight: aboutImage.fontWeight }}>Full Name :</div>
@@ -112,31 +112,6 @@ export default function About() {
                                         <div>
                                             <p>7264032362</p>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <h5 style={{ fontWeight: 'bold' }}>Personal Website</h5>
-                            <ul style={{paddingLeft:'1em'}}>
-                                <li>
-                                    <div className="d-gridulli">
-                                        <p style={{ fontWeight: aboutImage.fontWeight }}>GitHub :</p>
-                                        <a href="https://github.com/Sayrabhg">https://github.com/Sayrabhg</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="d-gridulli">
-                                        <p style={{ fontWeight: aboutImage.fontWeight }}>LinkedIn :</p>
-                                        <a href="https://www.linkedin.com/in/saurabh-bante-5347b422a/">
-                                            https://www.linkedin.com/in/saurabh-bante-5347b422a/
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="d-gridulli">
-                                        <p style={{ fontWeight: aboutImage.fontWeight }}>Portfolio :</p>
-                                        <a href="https://sayrabhgportfolio.netlify.app/">
-                                            https://sayrabhgportfolio.netlify.app/
-                                        </a>
                                     </div>
                                 </li>
                             </ul>

@@ -2,14 +2,3 @@
 .dropcss {
     filter: drop-shadow(0px 0px 15px #c9d5ff);
 }
-
-.d-gridulli {
-    grid-template-columns: 6em auto;
-    display: grid;
-}
-
-@media screen and (max-width:500px) {
-    .d-gridulli {
-        display: block!important;
-    }
-}

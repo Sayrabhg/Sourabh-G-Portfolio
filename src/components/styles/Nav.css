@@ -1,9 +1,24 @@
 /* ===== NAV WRAPPER ===== */
 #nav {
-    background-color: #222;
-    /* dark navbar */
     position: relative;
     z-index: 1000;
+}
+
+body.dark .nav-menu a {
+  background-color: #333!important;
+}
+
+body.dark .nav-menu a:hover {
+  color: #fff!important;
+  background-color: #000066!important;
+}
+
+body.dark .footercolor {
+  background-color: #121212!important;
+}
+
+body.dark .footercolor span {
+  color: #fbff00!important;
 }
 
 .container {
@@ -12,8 +27,12 @@
     padding: 0 1em;
 }
 
-.text-white {
+.text-color {
     color: white;
+}
+
+body.dark .text-color {
+    color: #fbff00;
 }
 
 /* ===== NAV MENU ===== */
@@ -97,7 +116,6 @@
 
   .hamburger-button {
     display: flex;
-    margin-left: auto;
   }
 
   .nav-menu a {

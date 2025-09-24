@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./styles/Nav.css";
+import Toggle from "./SubPages.jsx/NightBtn";
 
 export default function Nav() {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -27,7 +28,7 @@ export default function Nav() {
         borderBottom: "1px solid #aaa2a2",
       }}
     >
-      <div className="container">
+      <div className="container-fluid px-3">
         <div
           className="grid position-relative"
           style={{
@@ -38,13 +39,15 @@ export default function Nav() {
         >
           {/* Logo */}
           <div className="d-grid">
-            <h2 className="text-white" style={{ fontWeight: "bold" }}>
-              Sayrabhg
+            <h2 className="text-color m-0" style={{ fontWeight: 700 }}>
+              Sayrabh-G-Portfolio
             </h2>
           </div>
 
           {/* Nav Menu */}
-          <div className="d-grid position-relative">
+          <div className="d-flex position-relative justify-content-end align-items-center gap-4">
+            <Toggle />
+
             <div
               id="drop"
               className={`nav-menu ${menuOpen ? "show" : ""}`}
@@ -80,3 +83,6 @@ export default function Nav() {
     </section>
   );
 }
+
+// vilas kurve
+// 8830642918

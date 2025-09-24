@@ -10,7 +10,11 @@
     height: 100%;
     /* max-width: 1500px; */
     background-color: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+body.dark #slider .sliderDiv {
+    background: linear-gradient(90deg, #020024 0%, #080864 35%, #000000 100%);
 }
 
 #slider #main.container {
@@ -18,6 +22,25 @@
     position: relative;
     height: 100%;
     align-content: center;
+}
+
+body.dark #slider button {
+    background-color: #003f9c!important;
+}
+
+.socialLinks i {
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+.socialLinks a {
+    align-content: center;
+    color: white;
+}
+.socialLinks a:nth-child(2) {
+    color: #0077B7;
+}
+.socialLinks a:last-child {
+    color: #01b6db;
 }
 
 @media screen and (max-width:768px) {

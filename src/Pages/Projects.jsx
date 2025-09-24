@@ -71,7 +71,7 @@ export default function Projects() {
         {
             img: sayrabhgportfolio,
             title: "Responsive Portfolio",
-            subtitle: "sayrabhgportfolio",
+            subtitle: "Sayrabhg Portfolio",
             link: "https://sayrabhgportfolio.netlify.app/",
             desc: "The portfolio uses HTML5, CSS3, JavaScript, Bootstrap/Tailwind, Font Awesome, and Netlify for hosting."
         }
@@ -81,9 +81,9 @@ export default function Projects() {
             <section id="main-projects">
                 <div class="container py-5">
                     <aside class="aside33">
-                        <h1 class="">Projects</h1>
+                        <h1 class="py-2">Projects</h1>
                         <div class="">
-                            <div id="projects" className="d-grid" style={{ gap: '3em 2em' }}>
+                            <div id="projects" className="d-grid p-4" style={{ gap: '3em 2em' }}>
                                 {projects.map((proj, idx) => (
                                     <div id="projects" key={idx} class="educationanimation rounded border visible">
                                         <div class="alleductionanimation p-3">
@@ -93,9 +93,11 @@ export default function Projects() {
                                                     <h2 class="">{proj.title}</h2>
                                                     <h2 class="position-absolute">{proj.subtitle}</h2>
                                                 </div>
-                                                <a href={proj.link} className="icons" target="_blank" rel="noopener noreferrer">
-                                                    <ReadMore />
-                                                </a>
+                                                <div>
+                                                    <a href={proj.link} className="icons" target="_blank" rel="noopener noreferrer">
+                                                        <ReadMore />
+                                                    </a>
+                                                </div>
                                             </div>
                                             <p class="px-3 pb-4">{proj.desc}</p>
                                         </div>

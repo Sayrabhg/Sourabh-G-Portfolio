@@ -13,11 +13,21 @@
 }
 
 .joint-l {
-    background-color: rgb(247, 238, 255);
+    background-color: #f7eeff;
+}
+
+body.dark .joint-l {
+    background-color: #1d0036;
+    border-color: #ffffff66!important;
 }
 
 .joint-r {
     background-color: #f7f7f7;
+}
+
+body.dark .joint-r {
+    background-color: #101010;
+    border-color: #ffffff66!important;
 }
 
 .joint-r::before {

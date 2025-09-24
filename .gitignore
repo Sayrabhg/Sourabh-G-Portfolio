@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Purpose
+
+# Prevents temporary, sensitive, or unnecessary files from being included in version control.
+
+# Keeps the repository clean and focused only on important source code and configuration files.
