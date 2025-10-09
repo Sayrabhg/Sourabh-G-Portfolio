@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./styles/Nav.css";
 import Toggle from "./SubPages.jsx/NightBtn";
@@ -6,6 +6,7 @@ import Toggle from "./SubPages.jsx/NightBtn";
 export default function Nav() {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navlinks = (index) => ({
     border: "1px solid yellow",
@@ -46,6 +47,9 @@ export default function Nav() {
 
           {/* Nav Menu */}
           <div className="d-flex position-relative justify-content-end align-items-center gap-4">
+
+            <a onClick={() => { navigate('/certification') }} className="text-white" style={{ cursor: 'pointer', fontStyle: 'italic' }}>Certified by</a>
+
             <Toggle />
 
             <div

@@ -20,9 +20,9 @@ export default function Slider() {
                         <div style={{ color: '#fff' }}>
                             <h1 className='py-3' style={{ textAlign: 'left', fontSize: userContent.fontSize, fontWeight: userContent.weight }}>Hello, I'm Saurabh</h1>
                             <SliderPage />
-                            <div className='d-flex gap-3'>
+                            <div className='d-flex gap-4'>
                                 <button className='bg-primary my-4' onClick={() => navigate('/contact')} style={{ borderRadius: '10px', textAlign: 'left', display: 'flex', justifyContent: 'left' }}>Contact Me</button>
-                                <div className='socialLinks d-flex gap-2'>
+                                <div className='socialLinks d-flex gap-3'>
                                     <a href="https://github.com/Sayrabhg"><i class="fa-brands fa-github"></i></a>
                                     <a href="https://www.linkedin.com/in/saurabh-bante-5347b422a/"><i class="fa-brands fa-linkedin"></i></a>
                                     <a href="https://sayrabhgportfolio.netlify.app/"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>

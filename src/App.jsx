@@ -11,6 +11,8 @@ import Projects from './Pages/Projects';
 import ContactForm from './Pages/ContactForm';
 import Nav from './components/Nav';
 import Footer from "./components/Footer";
+import Services from './Pages/Services';
+import Certificate from './Pages/Certifications';
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
           <Route path='/Resume' element={<Resume />}></Route>
           <Route path='/Projects' element={<Projects />}></Route>
           <Route path='/contact' element={<ContactForm />}></Route>
+          <Route path='/Services' element={<Services />}></Route>
+          <Route path='/certification' element={<Certificate />}></Route >
         </Routes>
         <Footer />
       </Router>

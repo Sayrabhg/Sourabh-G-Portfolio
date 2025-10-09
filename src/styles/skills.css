@@ -6,10 +6,6 @@
     grid-template-columns: auto auto;
 }
 
-.d-grid.d-grid.gap-5{
-    /* grid-template-columns: 1fr 1fr 1fr; */
-}
-
 /* circular progress bar css */
 
 .circular-progress {
