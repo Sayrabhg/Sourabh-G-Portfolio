@@ -16,7 +16,7 @@ export default function Projects() {
             img: springReact,
             title: "Fetching Records",
             subtitle: "Spring - React",
-            link: "https://records-fetching-table.netlify.app/",
+            link: "https://records-fetching-table.netlify.app",
             desc: "Fetching data using a Spring Boot API connected to MySQL and displaying the data in React. The @Get API is working."
         },
         {
