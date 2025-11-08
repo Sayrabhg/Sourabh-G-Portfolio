@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../styles/about.css'
 import sourabhImage from '../assets/Sourabh1.jpg'
+import '../Script/script.js'
 
 export default function About() {
     const [isExpanded, setIsExpanded] = useState(false)

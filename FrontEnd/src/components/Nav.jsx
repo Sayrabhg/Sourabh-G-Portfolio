@@ -48,7 +48,7 @@ export default function Nav() {
           {/* Nav Menu */}
           <div className="d-flex position-relative justify-content-end align-items-center gap-4">
 
-            <a onClick={() => { navigate('/certification') }} className="text-white" style={{ cursor: 'pointer', fontStyle: 'italic' }}>Certified by</a>
+            <a onClick={() => { navigate('/certification') }} className="text-white firstA" style={{ cursor: 'pointer', fontStyle: 'italic' }}>Certified by</a>
 
             <Toggle />
 
@@ -69,6 +69,8 @@ export default function Nav() {
                   {label}
                 </Link>
               ))}
+
+              <a onClick={() => { navigate('/certification') }} className="text-white secondA" style={{ cursor: 'pointer', fontStyle: 'italic' }}>Certified by</a>
             </div>
 
             {/* Hamburger Button */}
