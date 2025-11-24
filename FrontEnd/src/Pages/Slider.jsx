@@ -7,6 +7,16 @@ export default function Slider() {
 
     const navigate = useNavigate();
 
+    const onButtonClick = () => {
+        const pdfUrl = "/sourabhgresume(Java).pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     const userContent = {
         fontSize: '50px',
         weight: 'bold'
@@ -21,7 +31,8 @@ export default function Slider() {
                             <h1 className='py-3' style={{ textAlign: 'left', fontSize: userContent.fontSize, fontWeight: userContent.weight }}>Hello, I'm Saurabh</h1>
                             <SliderPage />
                             <div className='d-flex gap-4'>
-                                <button className='bg-primary my-4' onClick={() => navigate('/contact')} style={{ borderRadius: '10px', textAlign: 'left', display: 'flex', justifyContent: 'left' }}>Contact Me</button>
+                                <button className='bg-primary my-4 rounded' onClick={() => navigate('/contact')} style={{ textAlign: 'left', display: 'flex', justifyContent: 'left' }}>Contact Me</button>
+                                <button className='bg-primary my-4 rounded' onClick={onButtonClick}>Download Cv</button>
                                 <div className='socialLinks d-flex gap-3'>
                                     <a href="https://github.com/Sayrabhg"><i class="fa-brands fa-github"></i></a>
                                     <a href="https://www.linkedin.com/in/saurabh-bante-5347b422a/"><i class="fa-brands fa-linkedin"></i></a>
