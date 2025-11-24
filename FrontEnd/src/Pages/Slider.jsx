@@ -8,7 +8,7 @@ export default function Slider() {
     const navigate = useNavigate();
 
     const onButtonClick = () => {
-        const pdfUrl = "/sourabhgresume(Java).pdf";
+        const pdfUrl = "/Resume.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "Resume.pdf";
