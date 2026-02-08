@@ -67,7 +67,7 @@ body.dark #slider button {
 }
 
 @media screen and (max-width:500px) {
-    h2 {
+    #nav h2 {
         font-size: smaller!important;
     }
 }
