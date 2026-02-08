@@ -2,7 +2,7 @@
 # Build stage
 #
 FROM maven:3.8.3-openjdk-17 AS build
-WORKDIR /app
+WORKDIR /backend
 COPY . .
 RUN mvn clean install -DskipTests
 
@@ -10,7 +10,7 @@ RUN mvn clean install -DskipTests
 # Package stage
 #
 FROM eclipse-temurin:17-jdk
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+WORKDIR /backend
+COPY --from=build /backend/target/*.jar backend.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","backend.jar"]

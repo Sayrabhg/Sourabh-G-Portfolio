@@ -16,7 +16,7 @@ export default function ContactForm() {
         };
 
         try {
-            const response = await fetch("http://localhost:1212/api/contact", {
+            const response = await fetch("https://sourabh-g-portfolio-backend.vercel.app/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -36,7 +36,7 @@ export default function ContactForm() {
 
     return (
         <>
-            <div className="position-relative">{status && <p className="mt-3 text-center text-success position-absolute" style={{ fontWeight:500, left: '50%', transform: 'translateX(-50%)' }}>{status}</p>}</div>
+            <div className="position-relative">{status && <p className="mt-3 text-center text-success position-absolute" style={{ fontWeight: 500, left: '50%', transform: 'translateX(-50%)' }}>{status}</p>}</div>
             <div className="container my-5">
                 <div className="row justify-content-center">
                     <div className="col-md-8 col-lg-6">
