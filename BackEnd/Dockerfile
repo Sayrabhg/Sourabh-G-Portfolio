@@ -1,16 +1,28 @@
 #
-# Build stage
+# -------- Build stage --------
 #
-FROM maven:3.8.3-openjdk-17 AS build
+FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY . .
-RUN mvn clean install -DskipTests
+
+# Copy pom first for dependency caching
+COPY pom.xml .
+RUN mvn dependency:go-offline -B
+
+# Copy source code
+COPY src ./src
+
+# Build the application
+RUN mvn clean package -DskipTests
+
 
 #
-# Package stage
+# -------- Runtime stage --------
 #
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+
+# Copy only the built jar
+COPY --from=build /app/target/ContactForms-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 1212
+ENTRYPOINT ["java", "-jar", "app.jar"]

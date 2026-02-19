@@ -1,15 +1,11 @@
-package com.ContactForm.form.Controller;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import com.ContactForm.form.Model.ContactRequest;
-import com.ContactForm.form.Service.EmailService;
-
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173","https://sourabh-g-portfolio-backend.onrender.com") // allow React app
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://sourabh-g-portfolio-backend.onrender.com"
+    }
+)
 public class ContactController {
 
     @Autowired
