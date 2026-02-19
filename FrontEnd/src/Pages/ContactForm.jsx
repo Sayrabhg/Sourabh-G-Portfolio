@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/Contact.css'
+import '../styles/Contact.css';
 
 export default function ContactForm() {
     const [status, setStatus] = useState("");
@@ -36,7 +35,7 @@ export default function ContactForm() {
 
     return (
         <>
-            <div className="position-relative">{status && <p className="mt-3 text-center text-success position-absolute" style={{ fontWeight:500, left: '50%', transform: 'translateX(-50%)' }}>{status}</p>}</div>
+            <div className="position-relative">{status && <p className="mt-3 text-center text-success position-absolute" style={{ fontWeight: 500, left: '50%', transform: 'translateX(-50%)' }}>{status}</p>}</div>
             <div className="container my-5">
                 <div className="row justify-content-center">
                     <div className="col-md-8 col-lg-6">

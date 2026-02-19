@@ -9,7 +9,7 @@ import com.ContactForm.form.Service.EmailService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173") // allow React app
+@CrossOrigin(origins = "http://localhost:5173","https://sourabh-g-portfolio-backend.onrender.com") // allow React app
 public class ContactController {
 
     @Autowired
