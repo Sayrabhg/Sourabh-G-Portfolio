@@ -17,7 +17,7 @@ import com.ContactForm.form.Service.EmailService;
 @CrossOrigin(
     origins = {
         "http://localhost:5173",
-        "https://sourabh-g-portfolio-backend.onrender.com"
+        "https://sourabh-g-portfolio.vercel.app"
     }
 )
 public class ContactController {
