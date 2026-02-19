@@ -24,6 +24,6 @@ WORKDIR /app
 # Copy only the built JAR from build stage
 COPY --from=build /app/target/ContactForms-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
+EXPOSE 1212
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
