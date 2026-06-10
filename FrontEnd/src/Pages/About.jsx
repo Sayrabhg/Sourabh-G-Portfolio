@@ -23,30 +23,15 @@ export default function About() {
                     <div className="col-lg-12">
                         <h1 className='pb-3'>About</h1>
                         <p id="text" style={{ textIndent: '2em', textAlign: 'justify' }}>
-                            Hello everyone, I'm a <b>Java Full Stack Developer</b> with strong skills in Core Java,
-                            Advanced Java, and frameworks like Hibernate and Spring. I'm also proficient in API
-                            testing tools such
+                            
+                            Hello everyone, I'm a <b>Java Full Stack Developer</b> with strong skills in Core Java, Advanced Java, and frameworks like Hibernate and Spring. I'm also proficient in API testing tools such as Postman. I completed comprehensive training at <i style={{ fontWeight: aboutImage.fontWeight }}>ARC Institute of Technologies</i>, covering front-end technologies (HTML, CSS, JavaScript), back-end development (Java, Spring Boot), and database management.
                             {isExpanded && (
                                 <span>
                                     {' '}
-                                    as Postman. I completed comprehensive training at{' '}
-                                    <i style={{ fontWeight: aboutImage.fontWeight }}>ARC Technologies</i>, covering
-                                    front-end technologies (HTML, CSS, JavaScript), back-end development (Java, Spring
-                                    Boot), and database management.
-                                    <br />
-                                    <div style={{ textIndent: '2em' }}>
-                                        As a web developer, I have built several projects including a{' '}
-                                        <b>Flipkart Clone</b> using HTML and CSS, and a <b>Pet Care Center</b> website
-                                        developed with PHP, SQL (XAMPP), and JavaScript. These are fully web-based
-                                        applications developed using my own code from scratch. I have a strong
-                                        understanding of both front-end and back-end technologies, and I take pride in
-                                        writing clean, effective code. I successfully completed my Full Stack
-                                        Development internship at{' '}
-                                        <i style={{ fontWeight: aboutImage.fontWeight }}>ARC Institute of Technologies</i>
-                                        , gaining practical experience and deepening my knowledge as a fresher in the
-                                        industry. This journey has helped me build solid technical expertise in web
-                                        development.
-                                    </div>
+                          
+                                        <div style={{ textIndent: '2em' }}>As a web developer, I have built several projects including a <b>Flipkart Clone</b> using HTML and CSS, a <b>Pet Care Center</b> website developed with PHP, SQL (XAMPP), and JavaScript, as well as <b>Iamshop</b>, an e-commerce platform, and <b>Alsshifa Tour and Travels</b>, a travel booking and management website developed during my work at Elite Associate Pvt Ltd. These are fully web-based applications developed using my own code from scratch.</div>
+                                        <div style={{ textIndent: '2em' }}>I have a strong understanding of both front-end and back-end technologies, and I take pride in writing clean, effective code. I successfully completed my <b>Full Stack Development internship at ARC Institute of Technologies</b>, gaining practical experience and deepening my knowledge as a fresher in the industry. This journey has helped me build solid technical expertise in web development.</div>
+
                                 </span>
                             )}
                             <a

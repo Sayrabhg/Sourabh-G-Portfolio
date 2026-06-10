@@ -36,9 +36,9 @@ export default function Slider() {
                                     <button className='bg-primary my-4 rounded' onClick={onButtonClick}>Download Cv</button>
                                 </div>
                                 <div className='socialLinks d-flex gap-3'>
-                                    <a href="https://github.com/Sayrabhg"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/saurabh-bante-5347b422a/"><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href="https://sayrabhgportfolio.netlify.app/"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Sayrabhg"><i className="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/saurabh-bante-5347b422a/"><i className="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://sayrabhgportfolio.netlify.app/"><i className="fa fa-user-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -12,10 +12,14 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.8.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.7.1",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.14.1",
     "react-slick": "^0.30.3",
+    "remark-gfm": "^4.0.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

@@ -1,0 +1,311 @@
+/* Container fixed to the bottom right */
+.chatbot-root {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* The Trigger Button */
+.chatbot-toggle {
+    width: 56px;
+    height: 56px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.05);
+    background-color: #1d4ed8;
+}
+
+.chatbot-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Chat Window Box */
+.chat-window {
+    width: 350px;
+    height: 500px;
+    max-height: 70vh;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Header Styles */
+.chat-header {
+    background-color: #2563eb;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-status {
+    margin: 0;
+    color: rgb(0, 255, 0);
+    font-size: 0.75rem;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* Messages Area */
+.messages-container {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message-row {
+    display: flex;
+    width: 100%;
+}
+
+.message-row.bot {
+    justify-content: flex-start;
+}
+
+.message-row.user {
+    justify-content: flex-end;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    border-radius: 14px;
+    line-height: 1.4;
+}
+
+.bot .message-bubble {
+    background-color: white;
+    color: #1f2937;
+    border-end-start-radius: 0;
+    border: 1px solid #e5e7eb;
+}
+
+.user .message-bubble {
+    background-color: #2563eb;
+    color: white;
+    border-end-end-radius: 0;
+}
+
+/* Input Area */
+.input-area {
+    padding: 16px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 8px;
+}
+
+.chat-input {
+    flex: 1;
+    background-color: #f3f4f6;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #1c1c1c;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+.chat-input:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.send-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: .8em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.send-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Target the specific container for a thin scrollbar */
+.messages-container {
+    /* Firefox support */
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+}
+
+/* Webkit (Chrome, Edge, Safari) support */
+.messages-container::-webkit-scrollbar {
+    width: 5px;
+    /* Sets the width of the vertical scrollbar */
+}
+
+.messages-container::-webkit-scrollbar-track {
+    background: transparent;
+    /* Makes the track invisible */
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    /* The "handle" color */
+    border-radius: 10px;
+    /* Makes it rounded */
+    border: 1px solid transparent;
+    /* Adds a tiny bit of spacing */
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af;
+    /* Darkens on hover */
+}
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 480px) {
+    .chatbot-root {
+        bottom: 15px;
+        /* Pull closer to the edge on mobile */
+        right: 15px;
+    }
+
+    .chat-window {
+        /* On small screens, the width should be relative to the screen */
+        width: calc(100vw - 30px);
+        height: 70vh;
+        /* Keeps it from covering the entire screen height */
+        max-width: 350px;
+        /* Ensures it doesn't look weird on medium screens */
+        bottom: 70px;
+        /* Position it exactly above the toggle button */
+    }
+
+    .chatbot-toggle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Specific fix for ultra-small devices (320px) */
+@media (max-width: 320px) {
+    .chat-window {
+        height: 80vh;
+        /* Give more height as width is very limited */
+    }
+
+    .message-bubble {
+        max-width: 90%;
+        /* Allow bubbles to be wider since the screen is narrow */
+        font-size: 0.8rem;
+        /* Slightly smaller text for readability */
+    }
+
+    .chat-header {
+        padding: 12px;
+    }
+
+    .input-area {
+        padding: 10px;
+    }
+}
+
+.message-bubble {
+    white-space: pre-wrap;
+}
+
+.message-bubble strong {
+    font-weight: bold;
+}
+
+.message-bubble li,
+.message-bubble p,
+.message-bubble h1,
+.message-bubble h2,
+.message-bubble h3,
+.message-bubble h4,
+.message-bubble h5,
+.message-bubble h6,
+.message-bubble ul,
+.message-bubble ol {
+    margin: 0;
+}
+
+.message-bubble ul {
+    padding-left: 20px;
+}
+
+.email-screen {
+    padding: 20px;
+    text-align: center;
+}
+
+.typing-loader {
+    display: flex;
+    gap: 4px;
+}
+
+.typing-loader span {
+    width: 6px;
+    height: 6px;
+    background: #555;
+    border-radius: 50%;
+    animation: blink 1.4s infinite;
+}
+
+.typing-loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+
+    0%,
+    80%,
+    100% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}

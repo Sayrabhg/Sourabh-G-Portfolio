@@ -127,3 +127,13 @@ a {
 .alleductionanimation img {
     transition: all .5s ease-in;
 }
+
+#main-projects .fbtns button {
+    border-radius: 3em;
+    padding: 0.25em 1.25em;
+    transition: all .3s ease;
+}
+
+body.dark #main-projects .fbtns button {
+    color: #ffffff;
+}
