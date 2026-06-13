@@ -14,7 +14,6 @@ import Certificate from "./Pages/Certifications";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Chatbot from "./components/pages/ChatBot";
 import Loader from "./Pages/Loader";
 
 
