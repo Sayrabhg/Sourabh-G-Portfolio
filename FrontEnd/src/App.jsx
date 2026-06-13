@@ -48,7 +48,6 @@ function App() {
         <Route path="/l" element={<Loader />} />
       </Routes>
 
-      <Chatbot />
       <Footer />
     </Router>
   );
