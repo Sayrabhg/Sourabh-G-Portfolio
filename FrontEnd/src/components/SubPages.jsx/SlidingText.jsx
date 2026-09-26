@@ -21,7 +21,7 @@ export default function TypingText1() {
     }, [index, message]);
 
     return (
-        <h3 className='py-3' style={{ textAlign: 'left', fontStyle: 'italic' }}>I'm <span style={{ color: '#0ef' }}>{text}</span></h3>
+        <h3 className='py-3' style={{ textAlign: 'left', fontStyle: 'italic' }}>I'm <span style={{ color: 'rgb(236, 255, 69)' }}>{text}</span></h3>
     );
 }
 
@@ -46,6 +46,6 @@ export function TypingText2() {
     }, [index, message]);
 
     return (
-        <h3 className='py-3' style={{ textAlign: 'left', fontStyle: 'italic' }}>I'm <span style={{ color: '#0066ffff' }}>{text}</span></h3>
+        <h3 className='py-3' style={{ textAlign: 'left', fontStyle: 'italic' }}>I'm <span style={{ color: 'rgb(133, 255, 67)' }}>{text}</span></h3>
     );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/slider.css'
 import { useNavigate } from 'react-router-dom';
 import SliderPage from '../components/SubPages.jsx/SliderPage';
+import home from '../assets/home.png'
 
 export default function Slider() {
 
@@ -26,14 +27,14 @@ export default function Slider() {
             <div className="sliderDiv"></div>
             <div id='main' className="container p-4">
                 <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-12" style={{ alignContent: 'center' }}>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12" style={{ alignContent: 'center' }}>
                         <div style={{ color: '#fff' }}>
                             <h1 className='py-3' style={{ textAlign: 'left', fontSize: userContent.fontSize, fontWeight: userContent.weight }}>Hello, I'm Saurabh</h1>
                             <SliderPage />
-                            <div className='d-flex flex-wrap gap-4'>
+                            <div className='d-flex flex-wrap gap-4v clickable'>
                                 <div className="d-flex gap-3">
-                                    <button className='bg-primary my-4 rounded' onClick={() => navigate('/contact')} style={{ textAlign: 'left', display: 'flex', justifyContent: 'left' }}>Contact Me</button>
-                                    <button className='bg-primary my-4 rounded' onClick={onButtonClick}>Download Cv</button>
+                                    <button className='bg-primary clickbtn my-4 rounded' onClick={() => navigate('/contact')} style={{ textAlign: 'left', display: 'flex', justifyContent: 'left' }}>Contact Me</button>
+                                    <button className='bg-primary clickbtn my-4 rounded' onClick={onButtonClick}>Download Cv</button>
                                 </div>
                                 <div className='socialLinks d-flex gap-3'>
                                     <a href="https://github.com/Sayrabhg"><i className="fa-brands fa-github"></i></a>
@@ -41,6 +42,11 @@ export default function Slider() {
                                     <a href="https://sayrabhgportfolio.netlify.app/"><i className="fa fa-user-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
+                        <div className="sliderImage">
+                            <img src={home} alt="sliderImage" className='img-fluid' />
                         </div>
                     </div>
                 </div>
