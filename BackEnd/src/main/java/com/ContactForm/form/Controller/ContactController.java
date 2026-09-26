@@ -27,6 +27,7 @@ public class ContactController {
 
     @PostMapping("/contact")
     public ResponseEntity<String> sendContact(@RequestBody ContactRequest request) {
+    	System.out.println("EMAIL: Starting...");
         boolean sent = emailService.sendEmail(request);
         if (sent) {
             return ResponseEntity.ok("Email sent successfully");
